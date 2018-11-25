@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/lbl_details_fragment_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/quick_overview"
+        android:textColor="@color/Black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_details_fragment_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_details_fragment_details"
+        android:text="Anim cillum meatball et, shoulder cow pork belly flank tri-tip pig. Occaecat culpa ut sint. Rump tongue dolore pork chop mollit alcatra hamburger. In filet mignon laboris pig cupidatat. Officia veniam ut qui sirloin, spare ribs shoulder sho..." />
+
+</RelativeLayout>

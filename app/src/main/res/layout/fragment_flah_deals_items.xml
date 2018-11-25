@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_flash_deals_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:id="@+id/scroll_view_flash_deals_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/del_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/del_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_countdown_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        app:fontFamily="@font/digital7" />
+
+                    <TextView
+                        android:id="@+id/txt_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_countdown_day"
+                        android:layout_centerHorizontal="true"
+                        android:text="DAYS"
+                        android:textSize="7sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/del_days"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/del_days">
+
+                    <TextView
+                        android:id="@+id/txt_countdown_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="10dp"
+                        android:text="00"
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        app:fontFamily="@font/digital7"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_countdown_hours"
+                        android:layout_centerHorizontal="true"
+                        android:text="HOURS"
+                        android:textSize="7dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del_minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/del_hours"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/del_hours">
+
+                    <TextView
+                        android:id="@+id/txt_countdown_minutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="10dp"
+                        android:text="00"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        app:fontFamily="@font/digital7"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_minutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_countdown_minutes"
+                        android:layout_centerHorizontal="true"
+                        android:text="MINUTES"
+                        android:textSize="7dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del_seconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/del_minutes"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/del_minutes">
+
+                    <TextView
+                        android:id="@+id/txt_countdown_seconds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="10dp"
+                        android:text="00"
+                        android:textAlignment="center"
+                        android:textColor="@color/Red"
+                        android:textSize="25dp"
+                        app:fontFamily="@font/digital7" />
+
+                    <TextView
+                        android:id="@+id/txt_seconds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_countdown_seconds"
+                        android:layout_centerHorizontal="true"
+                        android:text="SECONDS"
+                        android:textColor="@color/Red"
+                        android:textSize="7dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/del_countdown"
+                android:id="@+id/del_recyclerview_flash_deals_items">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_flash_deals_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

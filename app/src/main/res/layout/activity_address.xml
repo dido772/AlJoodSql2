@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SQL.Address.Address_Activity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_activity_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ScrollView
+           android:id="@+id/scroll_activity_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registration_addresses"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkgray"
+                    android:fontFamily="@font/actor"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_addresses"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </ScrollView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                >
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_add_address"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_add_circle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+            </RelativeLayout>
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

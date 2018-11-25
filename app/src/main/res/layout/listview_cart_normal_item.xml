@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_normal_cart_item"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="1dp"
+        android:layout_marginLeft="13dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+            <RelativeLayout
+                android:id="@+id/del_image_normal_cart_item"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+
+                <com.androidnetworking.widget.ANImageView
+                    android:id="@+id/img_normal_cart_item"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerInside" />
+
+                <RelativeLayout
+                    android:id="@+id/del_popsuppp_normal_cart_item"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_is_new_product_normal_cart_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/new_product"
+                        android:fontFamily="@font/actor"
+                        android:text="New"
+                        android:textColor="#ffffff"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/actor" />
+
+                    <TextView
+                        android:id="@+id/txt_is_sale_normal_cart_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/precent"
+                        android:fontFamily="@font/actor"
+                        android:text="Sale"
+                        android:textColor="#ffffff"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/actor" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/del_name_normal_cart_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/del_image_normal_cart_item">
+
+                <TextView
+                    android:id="@+id/txt_title_item_normal_cart_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lines="3"
+                    android:text="Salza med salt 250G 43*150g150g150g150g150g150g150g"
+                    android:textAllCaps="true"
+                    android:textColor="@color/Black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/del_bottom_normal_cart_item"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/del_name_normal_cart_item">
+
+                <ImageView
+                    android:id="@+id/imv_menu_normal_cart_item"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/del_new_price_normal_cart_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/del_image_normal_cart_item">
+
+                <TextView
+                    android:id="@+id/txt_label_price_normal_cart_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fadingEdge="none"
+                    android:freezesText="true"
+                    android:gravity="clip_vertical"
+                    android:text="Price:"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_price_normal_cart_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/txt_label_price_normal_cart_item"
+                    android:digits="2"
+                    android:fadingEdge="none"
+                    android:freezesText="true"
+                    android:gravity="clip_vertical"
+                    android:text="150,99"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/digital7" />
+
+                <TextView
+                    android:id="@+id/txt_new_valuta_name_normal_cart_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txt_price_normal_cart_item"
+                    android:text="SEK"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/del_spinner_normal_cart_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/del_image_normal_cart_item">
+                <TextView
+                    android:id="@+id/txt_label_qty_normal_cart_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fadingEdge="none"
+                    android:freezesText="true"
+                    android:gravity="clip_vertical"
+                    android:text="Quantity:"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spnr_qty_normal_cart_item"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_label_qty_normal_cart_item"
+                    android:text="1">
+
+                </Spinner>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

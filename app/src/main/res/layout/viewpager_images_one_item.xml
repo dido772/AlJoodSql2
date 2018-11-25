@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_vp_imgs_one_itm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.androidnetworking.widget.ANImageView
+        android:id="@+id/an_imv_vp_imgs_one_itm"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:cropToPadding="true"
+        android:scaleType="centerInside" />
+
+    <RelativeLayout
+        android:id="@+id/del_0_vp_imgs_one_itm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_precent_value_vp_imgs_one_itm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/precent"
+            android:fontFamily="@font/actor"
+            android:text="30%"
+            android:textColor="#ffff14"
+            android:textStyle="bold"
+            app:fontFamily="@font/actor" />
+
+        <TextView
+            android:id="@+id/txt_is_new_product_vp_imgs_one_itm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_precent_value_vp_imgs_one_itm"
+            android:layout_margin="5dp"
+            android:background="@drawable/new_product"
+            android:fontFamily="@font/actor"
+            android:text="New"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            app:fontFamily="@font/actor" />
+
+        <TextView
+            android:id="@+id/txt_is_sale_vp_imgs_one_itm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_is_new_product_vp_imgs_one_itm"
+            android:layout_margin="5dp"
+            android:background="@drawable/precent"
+            android:fontFamily="@font/actor"
+            android:text="Sale"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            app:fontFamily="@font/actor" />
+
+        <RelativeLayout
+            android:id="@+id/del_1_vp_imgs_one_itm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_is_sale_vp_imgs_one_itm">
+
+            <TextView
+                android:id="@+id/txt_discount_count_vp_imgs_one_itm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/precent"
+                android:text="2 For"
+                android:textColor="#ffff14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_discount_price_vp_imgs_one_itm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_discount_count_vp_imgs_one_itm"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/precent"
+                android:fontFamily="@font/digital7"
+                android:text="90,99"
+                android:textColor="#ffff14"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/del_2_vp_imgs_one_itm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/del_1_vp_imgs_one_itm">
+
+
+            <TextView
+                android:id="@+id/txt_special_price_vp_imgs_one_itm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/precent"
+                android:fontFamily="@font/digital7"
+                android:text="90,99"
+                android:textColor="#ffff14"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--adjustViewBounds="true"-->
+    <!--android:paddingLeft="30dp"-->
+    <!--android:paddingRight="40dp"-->
+
+</RelativeLayout>

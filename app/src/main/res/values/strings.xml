@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Al Jood Sql</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email         completions.</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="promt_firstname">First Name</string>
+    <string name="prompt_lastname">Last Name</string>
+    <string name="promt_telephone">Telephone</string>
+    <string name="promt_address">Address</string>
+    <string name="promt_city">City</string>
+    <string name="promt_postcode">Post Code</string>
+    <string name="promt_confrimpassword">Confrim Password</string>
+    <string name="subscripe">Newsletter Subscribe:</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="error_paswordnotmatch">Password Not Match</string>
+    <string name="email_already_register">Warning: E-Mail Address is already registered!</string>
+    <string name="title_dialog_create_Cus">Creating account...</string>
+    <string name="message_dialog_create_Cus">Please wait ...</string>
+    <string name="active_message_cus">AlertDialog.Builder builder1 = new AlertDialog.Builder(CreateCusActivity.this);</string>
+    <string name="title_alert_done_cus">Verify Account</string>
+    <string name="Message_Freeze_Cus">Accounted is disabled. Please Call Us</string>
+    <string name="accounted_is_disabled">Accounted is disabled.</string>
+    <string name="message_error_email_pass">Please check user name or password!!!</string>
+    <string name="title_error_login_cus">Error</string>
+    <string name="title_dialog_login">Login</string>
+    <string name="message_dialog_login">Please wait...</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_home">Home</string>
+    <string name="remembr_me">Remember Me?</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_confirm_signout">Ska Logga ut?</string>
+    <string name="Message_confirm_signout">Du ska logga ut nu är du säker?</string>
+    <string name="title_activity_language">Language</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+    <string name="select_language">Please select language:</string>
+    <string name="title_select_language_arabic">اختيار اللغة</string>
+    <string name="message_select_language_arabic">هل انت متاكد من اختيار اللغة العربية سيتم اعادة تشغيل البرنامج!!!</string>
+    <string name="message_select_language_english">Are you sure you want to choose English .The program will restart?</string>
+    <string name="title_select_language_english">Choose Language!!</string>
+    <string name="title_select_language_svenska">Välja språket!!</string>
+    <string name="message_select_language_svenska">Är du säker på att du vill välja svenska. Programmet startas om?</string>
+    <string name="language_string">Language</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_allproducts">All Products</string>
+    <string name="featured_brands_string">Featured Brands</string>
+    <string name="flash_deals_string">Flash Deals</string>
+    <string name="flash_discounts">Discounts</string>
+    <string name="best_selling">Best Selling</string>
+    <string name="quick_overview">QUICK OVERVIEW</string>
+    <string name="realted_products">Related Products</string>
+    <string name="title_cart">Cart</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="add_to_lists">Add To List</string>
+    <string name="show_more">Show More</string>
+    <string name="show_less">Show Less</string>
+    <string name="remove_from_cart">Remove from cart</string>
+    <string name="string_confrim_delete_item_from_cart">Item has been removed from Cart!</string>
+    <string name="string_confrim_add_item_to_cart">Item has been added to Cart!</string>
+    <string name="cart">Cart</string>
+    <string name="Added_to_your_cart">Added to your cart</string>
+    <string name="flash_deals">Flash Deals</string>
+    <string name="discount">Dicount</string>
+    <string name="sek">SEK</string>
+    <string name="original_price">Original price:</string>
+    <string name="addresses">Addresses</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="update_profile">Update profile</string>
+    <string name="registration_addresses">Registration addresses:</string>
+    <string name="title_activity_main2_activitysss">Main2Activitysss</string>
+    <string name="error_firstname_must_be_more">First name must be more 2 charctare</string>
+    <string name="error_invalid_post_code">Please enter valid Postcode</string>
+    <string name="save">Save</string>
+    <string name="state">State:</string>
+    <string name="promt_address2">Address2</string>
+    <string name="selected_state">Must be selected state</string>
+    <string name="error_city_must_be_more">City feild must be correct.</string>
+</resources>

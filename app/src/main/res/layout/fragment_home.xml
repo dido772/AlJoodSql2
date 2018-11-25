@@ -1,0 +1,287 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_home_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_white"
+    android:orientation="horizontal"
+    tools:context="se.aljood.aljoodsql.SQL.Home.HomeFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/del1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white">
+
+                    <ViewFlipper
+                        android:id="@+id/flipper_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"></ViewFlipper>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/del1"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/txtfeatured_brands"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/featured_brands_string"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager_featured_brands"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/txtfeatured_brands"
+                        android:layout_marginBottom="10dp">
+
+                    </android.support.v4.view.ViewPager>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/del2"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:id="@+id/header_flash_deals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtflash_deals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/flash_deals_string"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/del_countdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/del_image">
+
+                            <RelativeLayout
+                                android:id="@+id/del_days"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_countdown_day"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginRight="10dp"
+                                    android:text="00"
+                                    android:textAlignment="center"
+                                    android:textSize="25dp"
+                                    app:fontFamily="@font/digital7" />
+
+                                <TextView
+                                    android:id="@+id/txt_days"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/txt_countdown_day"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="DAYS"
+                                    android:textSize="7dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/del_hours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/del_days"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_countdown_hours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginRight="10dp"
+                                    android:text="00"
+                                    android:textAlignment="center"
+                                    android:textSize="25dp"
+                                    app:fontFamily="@font/digital7" />
+
+                                <TextView
+                                    android:id="@+id/txt_hours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/txt_countdown_hours"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="HOURS"
+                                    android:textSize="7dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/del_minutes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/del_hours"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_countdown_minutes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginRight="10dp"
+                                    android:text="00"
+                                    android:textAlignment="center"
+                                    android:textSize="25dp"
+                                    app:fontFamily="@font/digital7" />
+
+                                <TextView
+                                    android:id="@+id/txt_minutes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/txt_countdown_minutes"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="MINUTES"
+                                    android:textSize="7dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/del_seconds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/del_minutes"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_countdown_seconds"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginRight="10dp"
+                                    android:text="00"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Red"
+                                    android:textSize="25dp"
+                                    app:fontFamily="@font/digital7" />
+
+                                <TextView
+                                    android:id="@+id/txt_seconds"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/txt_countdown_seconds"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="SECONDS"
+                                    android:textColor="@color/Red"
+                                    android:textSize="7dp" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_special_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/header_flash_deals"
+                        android:orientation="horizontal" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/del3"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/txt_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/flash_discounts"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_discounts_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/txt_discount"
+                        android:orientation="horizontal" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/del4"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/txt_best_selling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/best_selling"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_best_selling_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/txt_best_selling"
+                        android:orientation="horizontal" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

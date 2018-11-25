@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_in_lv_discount_item"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:layout_margin="1dp"
+        android:layout_marginLeft="13dp">
+
+        <RelativeLayout
+            android:id="@+id/content_in_lv_discount_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+            <RelativeLayout android:id="@+id/del_image_in_lv_discount_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.androidnetworking.widget.ANImageView
+                    android:id="@+id/img_item_in_lv_discount_item"
+                    android:layout_width="180dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerInside" />
+
+                <RelativeLayout
+                    android:id="@+id/del_sale_in_lv_discount_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_isdiscountsale_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/precent"
+                        android:fontFamily="@font/actor"
+                        android:text="Sale"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/actor" />
+
+                    <TextView
+                        android:id="@+id/txt_is_new_product_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/new_product"
+                        android:fontFamily="@font/actor"
+                        android:text="New"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/actor" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/del_bottom_in_lv_discount_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/del_image_in_lv_discount_item">
+
+                <RelativeLayout android:id="@+id/del_name_item_in_lv_discount_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/del_image"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/txt_title_item_in_lv_discount_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="Salza med salt 250G 43*150g150g150g150g150g150g150g"
+                        android:textAllCaps="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/del_count_for_in_lv_discount_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/del_name_item_in_lv_discount_item"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_discount_count_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:fadingEdge="none"
+                        android:freezesText="true"
+                        android:gravity="clip_vertical"
+                        android:text="2"
+                        android:textColor="@color/Red"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/digital7" />
+
+                    <TextView
+                        android:id="@+id/lbl_discount_title_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:fadingEdge="none"
+                        android:freezesText="true"
+                        android:gravity="clip_vertical"
+                        android:text="for"
+                        android:textColor="@color/Green"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/digital7" />
+
+                    <TextView
+                        android:id="@+id/txt_discount_price_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:fadingEdge="none"
+                        android:freezesText="true"
+                        android:gravity="clip_vertical"
+                        android:text="150,99"
+                        android:textColor="@color/Red"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/digital7" />
+
+                    <TextView
+                        android:id="@+id/txt_new_valuta_name_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/txt_discount_price_in_lv_discount_item"
+                        android:text="SEK"
+                        android:textColor="@color/Red"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del_original_price_in_lv_discount_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/del_count_for_in_lv_discount_item">
+
+                    <TextView
+                        android:id="@+id/txt_original_price_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:digits="2"
+                        android:fadingEdge="none"
+                        android:freezesText="true"
+                        android:gravity="clip_vertical"
+                        android:text="150,99"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/digital7" />
+
+                    <TextView
+                        android:id="@+id/txt_original_valuta_name_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/txt_original_price_in_lv_discount_item"
+                        android:text="SEK"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imv_menu_in_lv_discount_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+                </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

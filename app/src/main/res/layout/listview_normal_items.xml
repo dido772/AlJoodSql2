@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_normal_items"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:layout_margin="1dp"
+        android:layout_marginLeft="13dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+            <RelativeLayout android:id="@+id/del_image_normal_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.androidnetworking.widget.ANImageView
+                    android:id="@+id/img_normal_item_normal_items"
+                    android:layout_width="180dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerInside" />
+                <RelativeLayout android:id="@+id/del_popsuppp_normal_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_is_new_product_normal_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/actor"
+                        android:text="New"
+                        android:background="@drawable/new_product"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/actor" />
+
+                    <TextView
+                        android:id="@+id/txt_is_sale_normal_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/actor"
+                        android:text="Sale"
+                        android:background="@drawable/precent"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/actor" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+            <RelativeLayout android:id="@+id/del_name_normal_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/del_image_normal_items">
+                <TextView android:id="@+id/txt_title_item_normal_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salza med salt 250G 43*150g150g150g150g150g150g150g"
+                    android:textAllCaps="true"
+                    android:lines="2"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/del_new_price_normal_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/del_name_normal_items">
+
+                <TextView
+                    android:id="@+id/txt_price_normal_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:digits="2"
+                    android:fadingEdge="none"
+                    android:freezesText="true"
+                    android:gravity="clip_vertical"
+                    android:text="150,99"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/digital7" />
+
+                <TextView android:id="@+id/txt_new_valuta_name_normal_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txt_price_normal_items"
+                    android:text="SEK"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/del_bottom_normal_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/del_name_normal_items">
+
+            <ImageView android:id="@+id/imv_menu_normal_items"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_title_item"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

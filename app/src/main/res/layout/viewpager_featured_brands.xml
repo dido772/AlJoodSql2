@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.androidnetworking.widget.ANImageView
+        android:id="@+id/an_imv_featured_brands"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"/>
+    <!--adjustViewBounds="true"-->
+        <!--android:paddingLeft="30dp"-->
+        <!--android:paddingRight="40dp"-->
+
+</LinearLayout>

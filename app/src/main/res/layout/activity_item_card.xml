@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    tools:context=".SQL.items.Item_Card.Item_Card">
+
+    <ScrollView
+        android:id="@+id/scroll_view_item_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true">
+
+
+        <RelativeLayout
+            android:id="@+id/del_1_vp_imgs_one_itm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txt_category_name_item_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/actor"
+                android:text="Category Name"
+                android:textColor="@color/Green"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_product_name_item_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_category_name_item_card"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/actor"
+                android:maxLines="3"
+                android:text="Neocell, Artherpet, Collagen Type 2 Plus CMO MSM, 60 Wafers."
+                android:textColor="@color/Black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/del_2_item_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rating_bar_item_card"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:clickable="false"
+                android:numStars="5"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/txt_count_rating_bar_item_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="19"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txt_separative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/txt_stock_status_name_item_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="In Stock"
+                android:textColor="@color/Green"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/del_3_item_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager_images_item_card"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+
+            <LinearLayout
+                android:id="@+id/SliderDots_images_item_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPager_images_item_card"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/del_4_item_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/del_price_item_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/txt_price_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:digits="2"
+                        android:fadingEdge="none"
+                        android:freezesText="true"
+                        android:gravity="clip_vertical"
+                        android:text="150,99"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/digital7" />
+
+                    <TextView
+                        android:id="@+id/txt_cur_name_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEK"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@id/txt_price_item_card"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/del_point_price_item_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/del_price_item_card">
+
+                    <TextView
+                        android:id="@+id/txt_point_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="none"
+                        android:freezesText="true"
+                        android:text="Price in reward points:"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_point_price_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:digits="2"
+                        android:fadingEdge="none"
+                        android:freezesText="true"
+                        android:gravity="clip_vertical"
+                        android:text="400"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/digital7" />
+
+                    <TextView
+                        android:id="@+id/txt_points_name_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Points"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_below="@id/del_point_price_item_card">
+
+                    <TextView
+                        android:id="@+id/txt_qty_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/actor"
+                        android:gravity="center"
+                        android:text="QTY:"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/txt_qty_item_card">
+
+                        <Button
+                            android:id="@+id/btn_minus_qty_item_card"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rounded_left_button"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            tools:ignore="NotSibling" />
+
+                        <TextView
+                            android:id="@+id/txt_qty_value_item_card"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/btn_minus_qty_item_card"
+                            android:fontFamily="@font/digital7"
+                            android:paddingTop="4dp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_plus_qty_item_card"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@id/txt_qty_value_item_card"
+                            android:background="@drawable/rounded_right_button"
+                            android:text="+"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/del_discount_inom_del_4_item_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_1"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_discount_count_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="2 For"
+                        android:textColor="#ffff14"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_discount_price_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_discount_count_item_card"
+                        android:layout_centerHorizontal="true"
+                        android:text="90.99:-"
+                        android:textColor="#ffff14"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/del_special_inom_del_4_item_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_1">
+
+                    <TextView
+                        android:id="@+id/txt_special_price_item_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/background_1"
+                        android:text="90,99"
+                        android:textColor="#ffff14"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/del_5_item_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <se.aljood.aljoodsql.SQL.Module.WrappingViewPager
+                    android:id="@+id/viewpagerrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.design.widget.AppBarLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/del_6_item_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/del_5_item_card"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txt_related_products_item_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/realted_products"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_related_products_item_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_related_products_item_card"
+                android:orientation="horizontal" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_add_to_wish_list"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:background="@drawable/background_2"
+                android:textAllCaps="true"
+                android:textSize="15dp"
+                android:text="Add to wish list"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+            <Button android:id="@+id/btn_add_to_cart"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:background="@drawable/background_2"
+                android:textAllCaps="true"
+                android:textSize="15dp"
+                android:text="Add to Cart"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

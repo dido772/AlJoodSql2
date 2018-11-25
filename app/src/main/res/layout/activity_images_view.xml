@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQL.items.Images_View_Activity">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imgs_view_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgs_view_zoom">
+        <LinearLayout
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <com.androidnetworking.widget.ANImageView
+                android:id="@+id/iv_test"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="3dp"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
